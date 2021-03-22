@@ -106,7 +106,7 @@ public final class HTMLFilter {
 	 */
 	private final boolean stripComment;
 	private final boolean encodeQuotes;
-	private boolean vDebug = false;
+	private boolean vDebug;
 	/**
 	 * flag determining whether to try to make tags when presented with "unbalanced" angle brackets (e.g. "&lt;b text &lt;/b&gt;" becomes "&lt;b&gt; text &lt;/g&gt;").
 	 * If set to false, unbalanced angle brackets will be

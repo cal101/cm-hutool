@@ -9,7 +9,7 @@ import cn.hutool.core.util.StrUtil;
  *
  */
 public class StepReport {
-	private static int step_id = 0;
+	private static int step_id;
 	
 	private int stepId = getId();
 	/**

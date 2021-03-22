@@ -24,7 +24,7 @@ public class ProductResBase implements Serializable {
 	/**
 	 * 结果 成功0 失败1
 	 */
-	private int resResult = 0;
+	private int resResult;
 	private String resCode = "0000";
 	private String resMsg = "success";
 

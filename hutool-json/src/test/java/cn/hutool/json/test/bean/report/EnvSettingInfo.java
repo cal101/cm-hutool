@@ -48,7 +48,7 @@ public class EnvSettingInfo {
 	/**
 	 * 是否可以开启定时任务
 	 */
-	private boolean cronEnabled = false;
+	private boolean cronEnabled;
 	
 	/**
 	 * 定时执行：suite文件
