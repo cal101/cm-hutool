@@ -24,12 +24,6 @@ public class VersionComparator implements Comparator<String>, Serializable {
 	/** 单例 */
 	public static final VersionComparator INSTANCE = new VersionComparator();
 
-	/**
-	 * 默认构造
-	 */
-	public VersionComparator() {
-	}
-
 	// -----------------------------------------------------------------------------------------------------
 	/**
 	 * 比较两个版本<br>

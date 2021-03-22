@@ -155,12 +155,7 @@ public class EqualsBuilder implements Builder<Boolean> {
 	 */
 	private boolean isEquals = true;
 
-	/**
-	 * 构造，初始状态值为true
-	 */
-	public EqualsBuilder() {
-		// do nothing for now.
-	}
+	
 
 	//-------------------------------------------------------------------------
 

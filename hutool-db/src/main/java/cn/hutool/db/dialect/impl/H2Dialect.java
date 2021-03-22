@@ -12,10 +12,6 @@ import cn.hutool.db.sql.SqlBuilder;
 public class H2Dialect extends AnsiSqlDialect {
 	private static final long serialVersionUID = 1490520247974768214L;
 
-	public H2Dialect() {
-//		wrapper = new Wrapper('"');
-	}
-
 	@Override
 	public String dialectName() {
 		return DialectName.H2.name();

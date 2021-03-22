@@ -14,12 +14,6 @@ import java.util.Map;
  */
 public class MvelEngine implements ExpressionEngine {
 
-	/**
-	 * 构造
-	 */
-	public MvelEngine(){
-	}
-
 	@Override
 	public Object eval(String expression, Map<String, Object> context) {
 		return MVEL.eval(expression, context);

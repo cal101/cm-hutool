@@ -14,12 +14,6 @@ import java.util.Map;
  */
 public class JfireELEngine implements ExpressionEngine {
 
-	/**
-	 * 构造
-	 */
-	public JfireELEngine(){
-	}
-
 	@Override
 	public Object eval(String expression, Map<String, Object> context) {
 		return Expression.parse(expression).calculate(context);

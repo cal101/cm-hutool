@@ -18,12 +18,6 @@ public class ComparableComparator<E extends Comparable<? super E>> implements Co
 	public static final ComparableComparator INSTANCE = new ComparableComparator<>();
 
 	/**
-	 * 构造
-	 */
-	public ComparableComparator() {
-	}
-
-	/**
 	 * 比较两个{@link Comparable}对象
 	 *
 	 * <pre>

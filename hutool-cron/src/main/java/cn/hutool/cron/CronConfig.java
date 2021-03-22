@@ -19,9 +19,6 @@ public class CronConfig {
 	 */
 	protected boolean matchSecond;
 
-	public CronConfig(){
-	}
-
 	/**
 	 * 设置时区
 	 *
