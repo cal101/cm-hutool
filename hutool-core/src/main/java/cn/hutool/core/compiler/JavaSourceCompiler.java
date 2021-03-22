@@ -101,7 +101,7 @@ public class JavaSourceCompiler {
 	 */
 	public JavaSourceCompiler addSource(Resource... resources) {
 		if (ArrayUtil.isNotEmpty(resources)) {
-			this.sourceList.addAll(Arrays.asList(resources));
+			Collections.addAll(this.sourceList, resources);
 		}
 		return this;
 	}
@@ -157,7 +157,7 @@ public class JavaSourceCompiler {
 	 */
 	public JavaSourceCompiler addLibrary(File... files) {
 		if (ArrayUtil.isNotEmpty(files)) {
-			this.libraryFileList.addAll(Arrays.asList(files));
+			Collections.addAll(this.libraryFileList, files);
 		}
 		return this;
 	}
