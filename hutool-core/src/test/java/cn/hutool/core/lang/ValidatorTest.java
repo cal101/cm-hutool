@@ -192,7 +192,7 @@ public class ValidatorTest {
 	public void isBetweenTest() {
 		Assert.assertTrue(Validator.isBetween(0, 0, 1));
 		Assert.assertTrue(Validator.isBetween(1L, 0L, 1L));
-		Assert.assertTrue(Validator.isBetween(0.19f, 0.1f, 0.2f));
+		Assert.assertTrue(Validator.isBetween(0.19F, 0.1F, 0.2F));
 		Assert.assertTrue(Validator.isBetween(0.19, 0.1, 0.2));
 	}
 

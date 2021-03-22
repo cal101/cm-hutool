@@ -44,7 +44,7 @@ public class ImgTest {
 						new Font("黑体", Font.BOLD, 100), //
 						0, //
 						100, //
-						1f)
+						1F)
 				.write(FileUtil.file("d:/test/test2_result.png"));
 	}
 
@@ -52,7 +52,7 @@ public class ImgTest {
 	@Ignore
 	public void pressImgTest(){
 		Img.from(FileUtil.file("d:/test/图片1.JPG"))
-				.pressImage(ImgUtil.read("d:/test/617180969474805871.jpg"), new Rectangle(0, 0, 800, 800), 1f)
+				.pressImage(ImgUtil.read("d:/test/617180969474805871.jpg"), new Rectangle(0, 0, 800, 800), 1F)
 				.write(FileUtil.file("d:/test/pressImg_result.jpg"));
 	}
 
@@ -60,7 +60,7 @@ public class ImgTest {
 	@Ignore
 	public void strokeTest(){
 		Img.from(FileUtil.file("d:/test/公章3.png"))
-				.stroke(null, 2f)
+				.stroke(null, 2F)
 				.write(FileUtil.file("d:/test/stroke_result.png"));
 	}
 }

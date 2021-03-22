@@ -25,7 +25,7 @@ public class MapWrapper<K, V> implements Map<K, V>, Iterable<Map.Entry<K, V>>, S
 	/**
 	 * 默认增长因子
 	 */
-	protected static final float DEFAULT_LOAD_FACTOR = 0.75f;
+	protected static final float DEFAULT_LOAD_FACTOR = 0.75F;
 	/**
 	 * 默认初始大小
 	 */

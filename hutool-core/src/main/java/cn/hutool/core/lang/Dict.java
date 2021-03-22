@@ -23,7 +23,7 @@ import java.util.Map;
 public class Dict extends LinkedHashMap<String, Object> implements BasicTypeGetter<String> {
 	private static final long serialVersionUID = 6135423866861206530L;
 
-	static final float DEFAULT_LOAD_FACTOR = 0.75f;
+	static final float DEFAULT_LOAD_FACTOR = 0.75F;
 	static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
 
 	/**

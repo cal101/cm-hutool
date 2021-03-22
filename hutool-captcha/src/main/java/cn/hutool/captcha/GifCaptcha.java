@@ -153,9 +153,9 @@ public class GifCaptcha extends AbstractCaptcha {
 		AlphaComposite ac;
 		// 字符的y坐标
 		float y = (height >> 1) + (font.getSize() >> 1);
-		float m = 1.0f * (width - (chars.length * font.getSize())) / chars.length;
+		float m = 1.0F * (width - (chars.length * font.getSize())) / chars.length;
 		//字符的x坐标
-		float x = Math.max(m / 2.0f, 2);
+		float x = Math.max(m / 2.0F, 2);
 		g2d.setFont(font);
 		// 指定透明度
 		if (null != this.textAlpha) {

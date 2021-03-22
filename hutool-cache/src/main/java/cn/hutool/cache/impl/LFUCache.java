@@ -40,7 +40,7 @@ public class LFUCache<K, V> extends AbstractCache<K, V> {
 
 		this.capacity = capacity;
 		this.timeout = timeout;
-		cacheMap = new HashMap<>(capacity + 1, 1.0f);
+		cacheMap = new HashMap<>(capacity + 1, 1.0F);
 	}
 
 	// ---------------------------------------------------------------- prune

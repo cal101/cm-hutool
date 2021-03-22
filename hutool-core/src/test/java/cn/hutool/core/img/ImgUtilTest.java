@@ -19,7 +19,7 @@ public class ImgUtilTest {
 	@Test
 	@Ignore
 	public void scaleTest() {
-		ImgUtil.scale(FileUtil.file("e:/pic/test.jpg"), FileUtil.file("e:/pic/test_result.jpg"), 0.8f);
+		ImgUtil.scale(FileUtil.file("e:/pic/test.jpg"), FileUtil.file("e:/pic/test_result.jpg"), 0.8F);
 	}
 
 	@Test
@@ -33,7 +33,7 @@ public class ImgUtilTest {
 	@Test
 	@Ignore
 	public void scalePngTest() {
-		ImgUtil.scale(FileUtil.file("f:/test/test.png"), FileUtil.file("f:/test/test_result.png"), 0.5f);
+		ImgUtil.scale(FileUtil.file("f:/test/test.png"), FileUtil.file("f:/test/test_result.png"), 0.5F);
 	}
 
 	@Test
@@ -67,7 +67,7 @@ public class ImgUtilTest {
 		ImgUtil.pressImage(
 				FileUtil.file("d:/test/617180969474805871.jpg"),
 				FileUtil.file("d:/test/dest.png"),
-				ImgUtil.read(FileUtil.file("d:/test/vbbb.png")), 0, 0, 0.9f);
+				ImgUtil.read(FileUtil.file("d:/test/vbbb.png")), 0, 0, 0.9F);
 	}
 
 	@Test
@@ -80,7 +80,7 @@ public class ImgUtilTest {
 				new Font("黑体", Font.BOLD, 100), //
 				0, //
 				0, //
-				1f);
+				1F);
 	}
 
 	@Test
@@ -106,7 +106,7 @@ public class ImgUtilTest {
 	@Ignore
 	public void compressTest() {
 		ImgUtil.compress(FileUtil.file("d:/test/dest.png"),
-				FileUtil.file("d:/test/1111_target.jpg"), 0.1f);
+				FileUtil.file("d:/test/1111_target.jpg"), 0.1F);
 	}
 	
 	@Test

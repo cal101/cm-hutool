@@ -1013,7 +1013,7 @@ public class ClassUtil {
 			} else if (double.class == clazz) {
 				return 0D;
 			} else if (float.class == clazz) {
-				return 0f;
+				return 0F;
 			} else if (boolean.class == clazz) {
 				return false;
 			}

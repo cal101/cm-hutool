@@ -22,7 +22,7 @@ public class FixedLinkedHashMap<K, V> extends LinkedHashMap<K, V> {
 	 * @param capacity 容量，实际初始容量比容量大1
 	 */
 	public FixedLinkedHashMap(int capacity) {
-		super(capacity + 1, 1.0f, true);
+		super(capacity + 1, 1.0F, true);
 		this.capacity = capacity;
 	}
 

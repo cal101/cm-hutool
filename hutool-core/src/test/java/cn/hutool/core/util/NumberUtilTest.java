@@ -19,7 +19,7 @@ public class NumberUtilTest {
 
 	@Test
 	public void addTest() {
-		Float a = 3.15f;
+		Float a = 3.15F;
 		Double b = 4.22;
 		double result = NumberUtil.add(a, b).doubleValue();
 		Assert.assertEquals(7.37, result, 2);
@@ -27,7 +27,7 @@ public class NumberUtilTest {
 
 	@Test
 	public void addTest2() {
-		double a = 3.15f;
+		double a = 3.15F;
 		double b = 4.22;
 		double result = NumberUtil.add(a, b);
 		Assert.assertEquals(7.37, result, 2);
@@ -35,7 +35,7 @@ public class NumberUtilTest {
 
 	@Test
 	public void addTest3() {
-		float a = 3.15f;
+		float a = 3.15F;
 		double b = 4.22;
 		double result = NumberUtil.add(a, b, a, b).doubleValue();
 		Assert.assertEquals(14.74, result, 2);

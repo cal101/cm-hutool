@@ -44,7 +44,7 @@ public class MapUtil {
 	/**
 	 * 默认增长因子，当Map的size达到 容量*增长因子时，开始扩充Map
 	 */
-	public static final float DEFAULT_LOAD_FACTOR = 0.75f;
+	public static final float DEFAULT_LOAD_FACTOR = 0.75F;
 
 	/**
 	 * Map是否为空

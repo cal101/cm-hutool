@@ -67,7 +67,7 @@ public class ConcurrentHashSet<E> extends AbstractSet<E> implements java.io.Seri
 	public ConcurrentHashSet(Iterable<E> iter) {
 		if(iter instanceof Collection) {
 			final Collection<E> collection = (Collection<E>)iter;
-			map = new ConcurrentHashMap<>((int)(collection.size() / 0.75f));
+			map = new ConcurrentHashMap<>((int)(collection.size() / 0.75F));
 			this.addAll(collection);
 		}else {
 			map = new ConcurrentHashMap<>();

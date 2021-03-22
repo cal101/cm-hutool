@@ -87,7 +87,7 @@ public class JavaInfo implements Serializable {
 	 */
 	private float getJavaVersionAsFloat() {
 		if (JAVA_VERSION == null) {
-			return 0f;
+			return 0F;
 		}
 
 		String str = JAVA_VERSION;

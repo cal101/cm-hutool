@@ -62,7 +62,7 @@ public class AnimatedGifEncoder {
 	 * @param ms 间隔时间，单位毫秒
 	 */
 	public void setDelay(int ms) {
-		delay = Math.round(ms / 10.0f);
+		delay = Math.round(ms / 10.0F);
 	}
 
 	/**
@@ -230,8 +230,8 @@ public class AnimatedGifEncoder {
 	 * @param fps float frame rate (frames per second)
 	 */
 	public void setFrameRate(float fps) {
-		if (fps != 0f) {
-			delay = Math.round(100f / fps);
+		if (fps != 0F) {
+			delay = Math.round(100F / fps);
 		}
 	}
 

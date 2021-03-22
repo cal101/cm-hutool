@@ -2452,7 +2452,7 @@ public class NumberUtil {
 	 */
 	public static float parseFloat(String number) {
 		if (StrUtil.isBlank(number)) {
-			return 0f;
+			return 0F;
 		}
 
 		try {

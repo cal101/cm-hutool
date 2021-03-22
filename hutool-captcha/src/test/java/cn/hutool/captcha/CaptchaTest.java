@@ -38,7 +38,7 @@ public class CaptchaTest {
 		// 定义图形验证码的长和宽
 		LineCaptcha lineCaptcha = CaptchaUtil.createLineCaptcha(200, 80);
 		lineCaptcha.setGenerator(new MathGenerator());
-		lineCaptcha.setTextAlpha(0.8f);
+		lineCaptcha.setTextAlpha(0.8F);
 		lineCaptcha.write("f:/captcha/math.png");
 	}
 
