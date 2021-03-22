@@ -147,7 +147,7 @@ final class InternalJSONUtil {
 		}
 
 		// boolean处理
-		if (0 == string.length()) {
+		if (string.isEmpty()) {
 			return StrUtil.EMPTY;
 		}
 		if ("true".equalsIgnoreCase(string)) {

@@ -101,7 +101,7 @@ public class DownloadTest {
 			Assert.assertTrue(file.exists());
 			Assert.assertTrue(file.isFile());
 			Assert.assertTrue(file.length() > 0);
-			Assert.assertTrue(file.getName().length() > 0);
+			Assert.assertTrue(!file.getName().isEmpty());
 		} catch (Exception e) {
 			Assert.assertTrue(e instanceof IORuntimeException);
 		} finally {
@@ -135,7 +135,7 @@ public class DownloadTest {
 			Assert.assertTrue(file.exists());
 			Assert.assertTrue(file.isFile());
 			Assert.assertTrue(file.length() > 0);
-			Assert.assertTrue(file.getName().length() > 0);
+			Assert.assertTrue(!file.getName().isEmpty());
 		} finally {
 			FileUtil.del(file);
 		}
@@ -152,7 +152,7 @@ public class DownloadTest {
 			Assert.assertTrue(file.exists());
 			Assert.assertTrue(file.isFile());
 			Assert.assertTrue(file.length() > 0);
-			Assert.assertTrue(file.getName().length() > 0);
+			Assert.assertTrue(!file.getName().isEmpty());
 		} catch (Exception e) {
 			Assert.assertTrue(e instanceof IORuntimeException);
 		} finally {

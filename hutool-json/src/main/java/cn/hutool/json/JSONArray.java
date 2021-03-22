@@ -298,7 +298,7 @@ public class JSONArray implements JSON, JSONGetter<Integer>, List<Object>, Rando
 	 * @throws JSONException 如果任何一个名为null
 	 */
 	public JSONObject toJSONObject(JSONArray names) throws JSONException {
-		if (names == null || names.size() == 0 || this.size() == 0) {
+		if (names == null || names.isEmpty() || this.size() == 0) {
 			return null;
 		}
 		final JSONObject jo = new JSONObject(this.config);

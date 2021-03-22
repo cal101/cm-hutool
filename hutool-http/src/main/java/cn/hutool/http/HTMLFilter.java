@@ -406,7 +406,7 @@ public final class HTMLFilter {
 					ending = "";
 				}
 
-				if (ending == null || ending.length() < 1) {
+				if (ending == null || ending.isEmpty()) {
 					if (vTagCounts.containsKey(name)) {
 						vTagCounts.put(name, vTagCounts.get(name) + 1);
 					} else {

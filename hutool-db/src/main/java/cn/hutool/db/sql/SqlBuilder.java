@@ -216,7 +216,7 @@ public class SqlBuilder implements Builder<String>{
 		for (Entry<String, Object> entry : entity.entrySet()) {
 			field = entry.getKey();
 			if (StrUtil.isNotBlank(field)) {
-				if (paramValues.size() > 0) {
+				if (!paramValues.isEmpty()) {
 					sql.append(", ");
 				}
 				this.fields.add(field);

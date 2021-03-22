@@ -33,7 +33,7 @@ public class ValueMatcherBuilder {
 		}
 
 		List<Integer> values = parseArray(value, parser);
-		if (values.size() == 0) {
+		if (values.isEmpty()) {
 			throw new CronException("Invalid field: [{}]", value);
 		}
 

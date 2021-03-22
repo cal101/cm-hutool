@@ -150,7 +150,7 @@ public class XML {
 				if ("CDATA".equals(token)) {
 					if (x.next() == '[') {
 						string = x.nextCDATA();
-						if (string.length() > 0) {
+						if (!string.isEmpty()) {
 							context.accumulate("content", string);
 						}
 						return false;
@@ -225,7 +225,7 @@ public class XML {
 					if (x.nextToken() != GT) {
 						throw x.syntaxError("Misshaped tag");
 					}
-					if (jsonobject.size() > 0) {
+					if (!jsonobject.isEmpty()) {
 						context.accumulate(tagName, jsonobject);
 					} else {
 						context.accumulate(tagName, "");
@@ -243,14 +243,14 @@ public class XML {
 							return false;
 						} else if (token instanceof String) {
 							string = (String) token;
-							if (string.length() > 0) {
+							if (!string.isEmpty()) {
 								jsonobject.accumulate("content", keepStrings ? token : InternalJSONUtil.stringToValue(string));
 							}
 
 						} else if (token == LT) {
 							// Nested element
 							if (parse(x, jsonobject, tagName, keepStrings)) {
-								if (jsonobject.size() == 0) {
+								if (jsonobject.isEmpty()) {
 									context.accumulate(tagName, "");
 								} else if (jsonobject.size() == 1 && jsonobject.get("content") != null) {
 									context.accumulate(tagName, jsonobject.get("content"));
@@ -394,7 +394,7 @@ public class XML {
 
 		String string = EscapeUtil.escapeHtml4(object.toString());
 		return (tagName == null) ?
-				"\"" + string + "\"" : (string.length() == 0) ? "<" + tagName + "/>"
+				"\"" + string + "\"" : (string.isEmpty()) ? "<" + tagName + "/>"
 				: "<" + tagName + ">" + string + "</" + tagName + ">";
 
 	}

@@ -113,7 +113,7 @@ public class WeightRandom<T> implements Serializable {
 		if(null != weightObj) {
 			final double weight = weightObj.getWeight();
 			if(weightObj.getWeight() > 0) {
-				double lastWeight = (this.weightMap.size() == 0) ? 0 : this.weightMap.lastKey();
+				double lastWeight = (this.weightMap.isEmpty()) ? 0 : this.weightMap.lastKey();
 				this.weightMap.put(weight + lastWeight, weightObj.getObj());// 权重累加
 			}
 		}
