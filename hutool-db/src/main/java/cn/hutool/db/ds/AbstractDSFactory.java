@@ -168,8 +168,7 @@ public abstract class AbstractDSFactory extends DSFactory {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((dataSourceName == null) ? 0 : dataSourceName.hashCode());
-		result = prime * result + ((setting == null) ? 0 : setting.hashCode());
-		return result;
+		return prime * result + ((setting == null) ? 0 : setting.hashCode());
 	}
 
 	@Override

@@ -312,8 +312,7 @@ public class JSONArray implements JSON, JSONGetter<Integer>, List<Object>, Rando
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((rawList == null) ? 0 : rawList.hashCode());
-		return result;
+		return prime * result + ((rawList == null) ? 0 : rawList.hashCode());
 	}
 
 	@Override

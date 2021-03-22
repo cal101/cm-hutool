@@ -194,8 +194,7 @@ public class DynaBean extends CloneSupport<DynaBean> implements Serializable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((bean == null) ? 0 : bean.hashCode());
-		return result;
+		return prime * result + ((bean == null) ? 0 : bean.hashCode());
 	}
 
 	@Override

@@ -205,8 +205,7 @@ public class WeightRandom<T> implements Serializable {
 			result = prime * result + ((obj == null) ? 0 : obj.hashCode());
 			long temp;
 			temp = Double.doubleToLongBits(weight);
-			result = prime * result + (int) (temp ^ (temp >>> 32));
-			return result;
+			return prime * result + (int) (temp ^ (temp >>> 32));
 		}
 
 		@Override

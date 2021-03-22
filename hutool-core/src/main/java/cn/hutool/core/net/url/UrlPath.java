@@ -175,7 +175,6 @@ public class UrlPath {
 		String segmentStr = StrUtil.trim(path);
 		segmentStr = StrUtil.removePrefix(segmentStr, StrUtil.SLASH);
 		segmentStr = StrUtil.removeSuffix(segmentStr, StrUtil.SLASH);
-		segmentStr = StrUtil.trim(segmentStr);
-		return segmentStr;
+		return StrUtil.trim(segmentStr);
 	}
 }

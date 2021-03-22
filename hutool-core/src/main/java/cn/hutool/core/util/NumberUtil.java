@@ -1568,8 +1568,7 @@ public class NumberUtil {
 	 */
 	public static int processMultiple(int selectNum, int minNum) {
 		int result;
-		result = mathSubNode(selectNum, minNum) / mathNode(selectNum - minNum);
-		return result;
+		return mathSubNode(selectNum, minNum) / mathNode(selectNum - minNum);
 	}
 
 	/**

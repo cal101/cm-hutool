@@ -212,8 +212,7 @@ public final class HTMLFilter {
 		result = regexReplace(P_AMP, "&amp;", result);
 		result = regexReplace(P_QUOTE, "&quot;", result);
 		result = regexReplace(P_LEFT_ARROW, "&lt;", result);
-		result = regexReplace(P_RIGHT_ARROW, "&gt;", result);
-		return result;
+		return regexReplace(P_RIGHT_ARROW, "&gt;", result);
 	}
 
 	// ---------------------------------------------------------------
@@ -316,9 +315,7 @@ public final class HTMLFilter {
 				sBuilder.append("</").append(key).append(">");
 			}
 		}
-		s = sBuilder.toString();
-
-		return s;
+		return sBuilder.toString();
 	}
 
 	private String processRemoveBlanks(final String s) {
@@ -479,8 +476,7 @@ public final class HTMLFilter {
 		m.appendTail(buf);
 		s = buf.toString();
 
-		s = validateEntities(s);
-		return s;
+		return validateEntities(s);
 	}
 
 	private String validateEntities(final String s) {

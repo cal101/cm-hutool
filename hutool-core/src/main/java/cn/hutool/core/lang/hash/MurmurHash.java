@@ -200,9 +200,7 @@ public class MurmurHash implements Serializable{
 
 		// finalization
 		hash ^= length;
-		hash = fmix64(hash);
-
-		return hash;
+		return fmix64(hash);
 	}
 	
 	/**

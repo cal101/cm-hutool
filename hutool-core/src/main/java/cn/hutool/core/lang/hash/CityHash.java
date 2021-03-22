@@ -105,8 +105,7 @@ public class CityHash {
 		h = rotate32(h, 17) * c1;
 		h = rotate32(h + f, 19);
 		h = h * 5 + 0xe6546b64;
-		h = rotate32(h, 17) * c1;
-		return h;
+		return rotate32(h, 17) * c1;
 	}
 
 	/**

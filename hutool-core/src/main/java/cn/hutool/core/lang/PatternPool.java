@@ -223,8 +223,7 @@ public class PatternPool {
 			final int prime = 31;
 			int result = 1;
 			result = prime * result + flag;
-			result = prime * result + ((regex == null) ? 0 : regex.hashCode());
-			return result;
+			return prime * result + ((regex == null) ? 0 : regex.hashCode());
 		}
 
 		@Override

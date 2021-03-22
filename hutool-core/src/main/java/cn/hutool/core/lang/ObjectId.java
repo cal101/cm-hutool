@@ -175,9 +175,7 @@ public class ObjectId {
 		// 进程ID + 对象加载ID
 		// 保留前2位
 		final String processSb = Integer.toHexString(processId) + Integer.toHexString(loaderId);
-		processPiece = processSb.hashCode() & 0xFFFF;
-
-		return processPiece;
+		return processSb.hashCode() & 0xFFFF;
 	}
 	// ----------------------------------------------------------------------------------------- Private method end
 }

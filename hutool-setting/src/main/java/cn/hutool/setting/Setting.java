@@ -780,8 +780,7 @@ public class Setting extends AbsSetting implements Map<String, String> {
 		result = prime * result + ((charset == null) ? 0 : charset.hashCode());
 		result = prime * result + groupedMap.hashCode();
 		result = prime * result + (isUseVariable ? 1231 : 1237);
-		result = prime * result + ((settingUrl == null) ? 0 : settingUrl.hashCode());
-		return result;
+		return prime * result + ((settingUrl == null) ? 0 : settingUrl.hashCode());
 	}
 
 	@Override

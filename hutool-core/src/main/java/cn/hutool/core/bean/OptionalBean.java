@@ -27,9 +27,7 @@ public final class OptionalBean<T> {
 	 * @return 空
 	 */
 	public static <T> OptionalBean<T> empty() {
-		@SuppressWarnings("unchecked")
-		OptionalBean<T> none = (OptionalBean<T>) EMPTY;
-		return none;
+		return (OptionalBean<T>) EMPTY;
 	}
 
 	private final T value;

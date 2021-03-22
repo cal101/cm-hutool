@@ -79,9 +79,7 @@ public class TreeUtil {
 				innerBuild(treeList, node, 0, treeNodeConfig.getDeep());
 			}
 		}
-		// 内存每层已经排过了 这是最外层排序
-		finalTreeList = finalTreeList.stream().sorted().collect(Collectors.toList());
-		return finalTreeList;
+		return finalTreeList.stream().sorted().collect(Collectors.toList());
 	}
 
 	/**

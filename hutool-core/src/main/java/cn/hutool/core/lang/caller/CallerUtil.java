@@ -91,8 +91,7 @@ public class CallerUtil {
 			//ignore
 		}
 		
-		caller = new StackTraceCaller();
-		return caller;
+		return new StackTraceCaller();
 	}
 	// ---------------------------------------------------------------------------------------------- static interface and class
 }

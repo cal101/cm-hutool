@@ -520,8 +520,7 @@ public class JSONObject implements JSON, JSONGetter<String>, Map<String, Object>
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((rawHashMap == null) ? 0 : rawHashMap.hashCode());
-		return result;
+		return prime * result + ((rawHashMap == null) ? 0 : rawHashMap.hashCode());
 	}
 
 	@Override
