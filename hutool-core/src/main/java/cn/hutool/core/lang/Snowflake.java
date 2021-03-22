@@ -55,7 +55,7 @@ public class Snowflake implements Serializable {
 	private final long workerId;
 	private final long dataCenterId;
 	private final boolean useSystemClock;
-	private long sequence = 0L;
+	private long sequence;
 	private long lastTimestamp = -1L;
 
 	/**

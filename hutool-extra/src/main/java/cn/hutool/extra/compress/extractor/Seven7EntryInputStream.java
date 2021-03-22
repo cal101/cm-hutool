@@ -16,7 +16,7 @@ public class Seven7EntryInputStream extends InputStream {
 
 	private final SevenZFile sevenZFile;
 	private final long size;
-	private long readSize = 0;
+	private long readSize;
 
 	/**
 	 * 构造

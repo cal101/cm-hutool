@@ -43,7 +43,7 @@ public class BeanPath implements Serializable{
 	/** 表达式边界符号数组 */
 	private static final char[] EXP_CHARS = { CharUtil.DOT, CharUtil.BRACKET_START, CharUtil.BRACKET_END };
 
-	private boolean isStartWith = false;
+	private boolean isStartWith;
 	protected List<String> patternParts;
 
 	/**

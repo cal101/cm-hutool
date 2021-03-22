@@ -63,14 +63,14 @@ public class SqlFormatter {
 
 	private static class FormatProcess {
 		boolean beginLine = true;
-		boolean afterBeginBeforeEnd = false;
-		boolean afterByOrSetOrFromOrSelect = false;
+		boolean afterBeginBeforeEnd;
+		boolean afterByOrSetOrFromOrSelect;
 		//		boolean afterValues = false;
-		boolean afterOn = false;
-		boolean afterBetween = false;
-		boolean afterInsert = false;
-		int inFunction = 0;
-		int parensSinceSelect = 0;
+		boolean afterOn;
+		boolean afterBetween;
+		boolean afterInsert;
+		int inFunction;
+		int parensSinceSelect;
 		private final LinkedList<Integer> parenCounts = new LinkedList<>();
 		private final LinkedList<Boolean> afterByOrFromOrSelects = new LinkedList<>();
 

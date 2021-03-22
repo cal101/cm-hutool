@@ -29,7 +29,7 @@ import java.io.PushbackInputStream;
 public class BOMInputStream extends InputStream {
 
 	private final PushbackInputStream in;
-	private boolean isInited = false;
+	private boolean isInited;
 	private final String defaultCharset;
 	private String charset;
 

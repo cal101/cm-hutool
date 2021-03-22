@@ -10,7 +10,7 @@ import cn.hutool.core.lang.Segment;
  */
 public class PageUtil {
 
-	private static int firstPageNo = 0;
+	private static int firstPageNo;
 
 	/**
 	 * 获得首页的页码，可以为0或者1

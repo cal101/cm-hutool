@@ -39,7 +39,7 @@ public abstract class AbstractDb implements Serializable {
 	/**
 	 * 是否支持事务
 	 */
-	protected Boolean isSupportTransaction = null;
+	protected Boolean isSupportTransaction;
 	/**
 	 * 是否大小写不敏感（默认大小写不敏感）
 	 */

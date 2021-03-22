@@ -24,9 +24,9 @@ public class GifCaptcha extends AbstractCaptcha {
 	//量化器取样间隔 - 默认是10ms
 	private int quality = 10;
 	// 帧循环次数
-	private int repeat = 0;
+	private int repeat;
 	//设置随机颜色时，最小的取色范围
-	private int minColor = 0;
+	private int minColor;
 	//设置随机颜色时，最大的取色范围
 	private int maxColor = 255;
 

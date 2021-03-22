@@ -85,14 +85,14 @@ public class GifDecoder {
 	protected BufferedImage lastImage; // previous frame
 
 	protected byte[] block = new byte[256]; // current data block
-	protected int blockSize = 0; // block size
+	protected int blockSize; // block size
 
 	// last graphic control extension info
-	protected int dispose = 0;
+	protected int dispose;
 	// 0=no action; 1=leave in place; 2=restore to bg; 3=restore to prev
-	protected int lastDispose = 0;
-	protected boolean transparency = false; // use transparent color
-	protected int delay = 0; // delay in milliseconds
+	protected int lastDispose;
+	protected boolean transparency; // use transparent color
+	protected int delay; // delay in milliseconds
 	protected int transIndex; // transparent color index
 
 	protected static final int MAX_STACK_SIZE = 4096;

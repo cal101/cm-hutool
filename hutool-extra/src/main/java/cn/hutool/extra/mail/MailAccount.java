@@ -77,7 +77,7 @@ public class MailAccount implements Serializable {
 	/**
 	 * 使用 STARTTLS安全连接，STARTTLS是对纯文本通信协议的扩展。它将纯文本连接升级为加密连接（TLS或SSL）， 而不是使用一个单独的加密通信端口。
 	 */
-	private boolean starttlsEnable = false;
+	private boolean starttlsEnable;
 	/**
 	 * 使用 SSL安全连接
 	 */

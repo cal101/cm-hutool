@@ -75,7 +75,7 @@ public class Mail {
 	/**
 	 * 是否使用全局会话，默认为false
 	 */
-	private boolean useGlobalSession = false;
+	private boolean useGlobalSession;
 
 	/**
 	 * debug输出位置，可以自定义debug日志

@@ -33,7 +33,7 @@ public class ComparatorChain<E> implements Chain<Comparator<E>, ComparatorChain<
 	/**
 	 * 比较器是否被锁定。锁定的比较器链不能再添加新的比较器。比较器会在开始比较时开始加锁。
 	 */
-	private boolean lock = false;
+	private boolean lock;
 
 	//------------------------------------------------------------------------------------- Static method start
 

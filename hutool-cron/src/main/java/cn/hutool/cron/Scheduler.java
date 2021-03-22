@@ -60,7 +60,7 @@ public class Scheduler implements Serializable {
 	/** 定时任务配置 */
 	protected CronConfig config = new CronConfig();
 	/** 是否已经启动 */
-	private boolean started = false;
+	private boolean started;
 	/** 是否为守护线程 */
 	protected boolean daemon;
 

@@ -32,14 +32,14 @@ public class AnimatedGifEncoder {
 
 	protected int width; // image size
 	protected int height;
-	protected Color transparent = null; // transparent color if given
-	protected boolean transparentExactMatch = false; // transparent color will be found by looking for the closest color
+	protected Color transparent; // transparent color if given
+	protected boolean transparentExactMatch; // transparent color will be found by looking for the closest color
 	// or for the exact color if transparentExactMatch == true
-	protected Color background = null;  // background color if given
+	protected Color background;  // background color if given
 	protected int transIndex; // transparent index in color table
 	protected int repeat = -1; // no repeat
-	protected int delay = 0; // frame delay (hundredths)
-	protected boolean started = false; // ready to output frames
+	protected int delay; // frame delay (hundredths)
+	protected boolean started; // ready to output frames
 	protected OutputStream out;
 	protected BufferedImage image; // current frame
 	protected byte[] pixels; // BGR byte array from frame
@@ -49,9 +49,9 @@ public class AnimatedGifEncoder {
 	protected boolean[] usedEntry = new boolean[256]; // active palette entries
 	protected int palSize = 7; // color table size (bits-1)
 	protected int dispose = -1; // disposal code (-1 = use default)
-	protected boolean closeStream = false; // close stream when finished
+	protected boolean closeStream; // close stream when finished
 	protected boolean firstFrame = true;
-	protected boolean sizeSet = false; // if false, get size from first frame
+	protected boolean sizeSet; // if false, get size from first frame
 	protected int sample = 10; // default sample interval for quantizer
 
 	/**

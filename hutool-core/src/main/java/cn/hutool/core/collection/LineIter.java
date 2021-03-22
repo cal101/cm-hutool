@@ -44,7 +44,7 @@ public class LineIter implements Iterator<String>, Iterable<String>, Closeable, 
 	/** The current line. */
 	private String cachedLine;
 	/** A flag indicating if the iterator has been fully read. */
-	private boolean finished = false;
+	private boolean finished;
 
 	/**
 	 * 构造

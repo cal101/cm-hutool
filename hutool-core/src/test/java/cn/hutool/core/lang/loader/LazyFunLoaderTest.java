@@ -7,7 +7,7 @@ public class LazyFunLoaderTest {
 
 	static class BigObject {
 
-		private boolean isDestroy = false;
+		private boolean isDestroy;
 
 		public void destroy() {
 			this.isDestroy = true;

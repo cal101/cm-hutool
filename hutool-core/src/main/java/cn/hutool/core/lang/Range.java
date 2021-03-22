@@ -37,7 +37,7 @@ public class Range<T> implements Iterable<T>, Iterator<T>, Serializable {
 	/** 步进 */
 	private final Steper<T> steper;
 	/** 索引 */
-	private int index = 0;
+	private int index;
 	/** 是否包含第一个元素 */
 	private final boolean includeStart;
 	/** 是否包含最后一个元素 */

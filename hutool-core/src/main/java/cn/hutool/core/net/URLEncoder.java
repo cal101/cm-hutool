@@ -164,7 +164,7 @@ public class URLEncoder implements Serializable {
 	/**
 	 * 是否编码空格为+
 	 */
-	private boolean encodeSpaceAsPlus = false;
+	private boolean encodeSpaceAsPlus;
 
 	/**
 	 * 构造<br>

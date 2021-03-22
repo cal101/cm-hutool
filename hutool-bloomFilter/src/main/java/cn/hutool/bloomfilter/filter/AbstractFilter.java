@@ -14,9 +14,9 @@ import cn.hutool.bloomfilter.bitMap.LongMap;
 public abstract class AbstractFilter implements BloomFilter {
 	private static final long serialVersionUID = 1L;
 
-	private BitMap bm = null;
+	private BitMap bm;
 
-	protected long size = 0;
+	protected long size;
 
 	/**
 	 * 构造
