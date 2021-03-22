@@ -501,7 +501,7 @@ public class MailAccount implements Serializable {
 		}
 
 		// SSL
-		if (null != this.sslEnable && this.sslEnable) {
+		if (Boolean.TRUE.equals(this.sslEnable)) {
 			p.put(SSL_ENABLE, "true");
 			p.put(SOCKET_FACTORY, socketFactoryClass);
 			p.put(SOCKET_FACTORY_FALLBACK, String.valueOf(this.socketFactoryFallback));
@@ -538,7 +538,7 @@ public class MailAccount implements Serializable {
 		}
 		if (null == this.port) {
 			// 端口在SSL状态下默认与socketFactoryPort一致，非SSL状态下默认为25
-			this.port = (null != this.sslEnable && this.sslEnable) ? this.socketFactoryPort : 25;
+			this.port = (Boolean.TRUE.equals(this.sslEnable)) ? this.socketFactoryPort : 25;
 		}
 		if (null == this.charset) {
 			// 默认UTF-8编码
