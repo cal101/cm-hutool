@@ -1724,7 +1724,7 @@ public class ImgUtil {
 		}
 
 		if (null == result) {
-			throw new IllegalArgumentException("Image type of [" + imageUrl.toString() + "] is not supported!");
+			throw new IllegalArgumentException("Image type of [" + imageUrl + "] is not supported!");
 		}
 
 		return result;

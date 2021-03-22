@@ -270,7 +270,7 @@ public class NetUtil {
 	 * @return 隐藏部分后的IP
 	 */
 	public static String hideIpPart(String ip) {
-		return StrUtil.builder(ip.length()).append(ip, 0, ip.lastIndexOf(".") + 1).append("*").toString();
+		return StrUtil.builder(ip.length()).append(ip, 0, ip.lastIndexOf('.') + 1).append("*").toString();
 	}
 
 	/**
@@ -299,7 +299,7 @@ public class NetUtil {
 
 		String destHost;
 		int port;
-		int index = host.indexOf(":");
+		int index = host.indexOf(':');
 		if (index != -1) {
 			// host:port形式
 			destHost = host.substring(0, index);
@@ -688,7 +688,7 @@ public class NetUtil {
 	 */
 	public static String getMultistageReverseProxyIp(String ip) {
 		// 多级反向代理检测
-		if (ip != null && ip.indexOf(",") > 0) {
+		if (ip != null && ip.indexOf(',') > 0) {
 			final String[] ips = ip.trim().split(",");
 			for (String subIp : ips) {
 				if (false == isUnknown(subIp)) {

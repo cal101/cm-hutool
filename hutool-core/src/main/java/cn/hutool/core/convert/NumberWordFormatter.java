@@ -82,7 +82,7 @@ public class NumberWordFormatter {
 	 * @return 英文表达式
 	 */
 	private static String format(String x) {
-		int z = x.indexOf("."); // 取小数点位置
+		int z = x.indexOf('.'); // 取小数点位置
 		String lstr, rstr = "";
 		if (z > -1) { // 看是否有小数，如果有，则分别取左边和右边
 			lstr = x.substring(0, z);

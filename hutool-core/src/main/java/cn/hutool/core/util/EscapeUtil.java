@@ -120,7 +120,7 @@ public class EscapeUtil {
 		int pos;
 		char ch;
 		while (lastPos < content.length()) {
-			pos = content.indexOf("%", lastPos);
+			pos = content.indexOf('%', lastPos);
 			if (pos == lastPos) {
 				if (content.charAt(pos + 1) == 'u') {
 					ch = (char) Integer.parseInt(content.substring(pos + 2, pos + 6), 16);

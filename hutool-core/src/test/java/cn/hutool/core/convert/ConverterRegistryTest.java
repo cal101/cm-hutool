@@ -34,7 +34,7 @@ public class ConverterRegistryTest {
 	public static class CustomConverter implements Converter<CharSequence>{
 		@Override
 		public CharSequence convert(Object value, CharSequence defaultValue) throws IllegalArgumentException {
-			return "Custom: " + value.toString();
+			return "Custom: " + value;
 		}
 	}
 }
