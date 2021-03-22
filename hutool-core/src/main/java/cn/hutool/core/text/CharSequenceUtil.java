@@ -2325,7 +2325,7 @@ public class CharSequenceUtil {
 			return new String[0];
 		}
 
-		final List<String> result = new LinkedList<>();
+		final List<String> result = new ArrayList<>();
 		final String[] split = split(str, prefix);
 		if (prefix.equals(suffix)) {
 			// 前后缀字符相同，单独处理
