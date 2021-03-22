@@ -17,7 +17,7 @@ import java.util.Stack;
 public class Calculator {
 	private final Stack<String> postfixStack = new Stack<>();// 后缀式栈
 	private final Stack<Character> opStack = new Stack<>();// 运算符栈
-	private final int[] operatPriority = new int[]{0, 3, 2, 1, -1, 1, 0, 2};// 运用运算符ASCII码-40做索引的运算符优先级
+	private final int[] operatPriority = {0, 3, 2, 1, -1, 1, 0, 2};// 运用运算符ASCII码-40做索引的运算符优先级
 
 	/**
 	 * 计算表达式的值

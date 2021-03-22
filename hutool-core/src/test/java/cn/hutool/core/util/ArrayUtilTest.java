@@ -44,7 +44,7 @@ public class ArrayUtilTest {
 		Assert.assertTrue(isEmpty);
 
 		// Object数组
-		Object[] e = new Object[]{"1", "2", 3, 4D};
+		Object[] e = {"1", "2", 3, 4D};
 		final boolean empty = ArrayUtil.isEmpty(e);
 		Assert.assertFalse(empty);
 	}

@@ -12,15 +12,15 @@ import cn.hutool.core.util.StrUtil;
  */
 public class NumberWordFormatter {
 
-	private static final String[] NUMBER = new String[]{"", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN",
+	private static final String[] NUMBER = {"", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN",
 			"EIGHT", "NINE"};
-	private static final String[] NUMBER_TEEN = new String[]{"TEN", "ELEVEN", "TWELVE", "THIRTEEN", "FOURTEEN",
+	private static final String[] NUMBER_TEEN = {"TEN", "ELEVEN", "TWELVE", "THIRTEEN", "FOURTEEN",
 			"FIFTEEN", "SIXTEEN", "SEVENTEEN", "EIGHTEEN", "NINETEEN"};
-	private static final String[] NUMBER_TEN = new String[]{"TEN", "TWENTY", "THIRTY", "FORTY", "FIFTY", "SIXTY",
+	private static final String[] NUMBER_TEN = {"TEN", "TWENTY", "THIRTY", "FORTY", "FIFTY", "SIXTY",
 			"SEVENTY", "EIGHTY", "NINETY"};
-	private static final String[] NUMBER_MORE = new String[]{"", "THOUSAND", "MILLION", "BILLION"};
+	private static final String[] NUMBER_MORE = {"", "THOUSAND", "MILLION", "BILLION"};
 
-	private static final String[] NUMBER_SUFFIX = new String[]{"k", "w", "", "m", "", "", "b", "", "", "t", "", "", "p", "", "", "e"};
+	private static final String[] NUMBER_SUFFIX = {"k", "w", "", "m", "", "", "b", "", "", "t", "", "", "p", "", "", "e"};
 
 	/**
 	 * 将阿拉伯数字转为英文表达式

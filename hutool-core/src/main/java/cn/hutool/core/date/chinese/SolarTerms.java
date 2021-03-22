@@ -44,7 +44,7 @@ public class SolarTerms {
 	 * 1900-2100各年的24节气日期速查表
 	 * 此表来自：https://github.com/jjonline/calendar.js/blob/master/calendar.js
 	 */
-	private static final String[] S_TERM_INFO = new String[]{
+	private static final String[] S_TERM_INFO = {
 			"9778397bd097c36b0b6fc9274c91aa", "97b6b97bd19801ec9210c965cc920e", "97bcf97c3598082c95f8c965cc920f",
 			"97bd0b06bdb0722c965ce1cfcc920f", "b027097bd097c36b0b6fc9274c91aa", "97b6b97bd19801ec9210c965cc920e",
 			"97bcf97c359801ec95f8c965cc920f", "97bd0b06bdb0722c965ce1cfcc920f", "b027097bd097c36b0b6fc9274c91aa",

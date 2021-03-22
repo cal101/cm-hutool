@@ -17,7 +17,7 @@ public class ExcelDateUtil {
 	/**
 	 * 某些特殊的自定义日期格式
 	 */
-	private static final int[] customFormats = new int[]{28, 30, 31, 32, 33, 55, 56, 57, 58};
+	private static final int[] customFormats = {28, 30, 31, 32, 33, 55, 56, 57, 58};
 
 	public static boolean isDateFormat(Cell cell){
 		return isDateFormat(cell, null);

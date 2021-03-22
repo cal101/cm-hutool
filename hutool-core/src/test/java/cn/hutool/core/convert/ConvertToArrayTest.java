@@ -78,7 +78,7 @@ public class ConvertToArrayTest {
 	public void toPrimitiveArrayTest(){
 		
 		//数组转数组测试
-		int[] a = new int[]{1,2,3,4};
+		int[] a = {1,2,3,4};
 		long[] result = ConverterRegistry.getInstance().convert(long[].class, a);
 		Assert.assertArrayEquals(new long[]{1L, 2L, 3L, 4L}, result);
 		
