@@ -1346,7 +1346,7 @@ public class ArrayUtil extends PrimitiveArrayUtil {
 	 */
 	@SuppressWarnings("unchecked")
 	public static <T> T[] remove(T[] array, int index) throws IllegalArgumentException {
-		return (T[]) remove((Object) array, index);
+		return (T[]) remove(array, index);
 	}
 
 	// ---------------------------------------------------------------------- removeEle

@@ -502,7 +502,7 @@ public class CellUtil {
 			// 普通数字
 			if (null != format && format.indexOf(StrUtil.C_DOT) < 0) {
 				final long longPart = (long) value;
-				if (((double) longPart) == value) {
+				if ((longPart) == value) {
 					// 对于无小数部分的数字类型，转为Long
 					return longPart;
 				}

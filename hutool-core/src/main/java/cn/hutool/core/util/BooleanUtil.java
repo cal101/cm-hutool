@@ -192,7 +192,7 @@ public class BooleanUtil {
 	 * @return float值
 	 */
 	public static float toFloat(boolean value) {
-		return (float) toInt(value);
+		return toInt(value);
 	}
 
 	/**

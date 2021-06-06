@@ -114,7 +114,7 @@ public class ShearCaptcha extends AbstractCaptcha {
 		int phase = RandomUtil.randomInt(2);
 
 		for (int i = 0; i < h1; i++) {
-			double d = (double) (period >> 1) * Math.sin((double) i / (double) period + (6.2831853071795862D * (double) phase) / (double) frames);
+			double d = (period >> 1) * Math.sin((double) i / (double) period + (6.2831853071795862D * phase) / frames);
 			g.copyArea(0, i, w1, 1, (int) d, 0);
 			g.setColor(color);
 			g.drawLine((int) d, i, 0, i);
@@ -138,7 +138,7 @@ public class ShearCaptcha extends AbstractCaptcha {
 		int frames = 20;
 		int phase = 7;
 		for (int i = 0; i < w1; i++) {
-			double d = (double) (period >> 1) * Math.sin((double) i / (double) period + (6.2831853071795862D * (double) phase) / (double) frames);
+			double d = (period >> 1) * Math.sin((double) i / (double) period + (6.2831853071795862D * phase) / frames);
 			g.copyArea(i, 0, 1, h1, 0, (int) d);
 			g.setColor(color);
 			// 擦除原位置的痕迹
@@ -169,12 +169,12 @@ public class ShearCaptcha extends AbstractCaptcha {
 		// line length
 		double lineLength = Math.sqrt(dX * dX + dY * dY);
 
-		double scale = (double) (thickness) / (2 * lineLength);
+		double scale = (thickness) / (2 * lineLength);
 
 		// The x and y increments from an endpoint needed to create a
 		// rectangle...
-		double ddx = -scale * (double) dY;
-		double ddy = scale * (double) dX;
+		double ddx = -scale * dY;
+		double ddy = scale * dX;
 		ddx += (ddx > 0) ? 0.5 : -0.5;
 		ddy += (ddy > 0) ? 0.5 : -0.5;
 		int dx = (int) ddx;

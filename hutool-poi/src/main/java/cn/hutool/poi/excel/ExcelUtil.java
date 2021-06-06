@@ -624,7 +624,7 @@ public class ExcelUtil {
 			if (Character.isDigit(c)) {
 				break;// 确定指定的char值是否为数字
 			}
-			index = (index + 1) * 26 + (int) c - 'A';
+			index = (index + 1) * 26 + c - 'A';
 		}
 		return index;
 	}
