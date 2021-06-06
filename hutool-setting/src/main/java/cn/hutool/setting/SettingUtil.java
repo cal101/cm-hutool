@@ -27,7 +27,7 @@ public class SettingUtil {
 	 * @return 当前环境下配置文件
 	 */
 	public static Setting get(String name) {
-		return SETTING_MAP.computeIfAbsent(name, (filePath)->{
+		return SETTING_MAP.computeIfAbsent(name, filePath -> {
 			final String extName = FileNameUtil.extName(filePath);
 			if (StrUtil.isEmpty(extName)) {
 				filePath = filePath + "." + Setting.EXT_NAME;

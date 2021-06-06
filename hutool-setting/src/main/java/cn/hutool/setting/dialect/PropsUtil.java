@@ -29,7 +29,7 @@ public class PropsUtil {
 	 * @return 当前环境下配置文件
 	 */
 	public static Props get(String name) {
-		return propsMap.computeIfAbsent(name, (filePath)->{
+		return propsMap.computeIfAbsent(name, filePath -> {
 			final String extName = FileUtil.extName(filePath);
 			if (StrUtil.isEmpty(extName)) {
 				filePath = filePath + "." + Props.EXT_NAME;

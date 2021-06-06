@@ -38,7 +38,7 @@ public abstract class BeanRowHandler<T> extends AbstractRowHandler<T> {
 		super(startRowIndex, endRowIndex);
 		Assert.isTrue(headerRowIndex <= startRowIndex, "Header row must before the start row!");
 		this.headerRowIndex = headerRowIndex;
-		this.convertFunc = (rowList) -> BeanUtil.toBean(IterUtil.toMap(headerList, rowList), clazz);
+		this.convertFunc = rowList -> BeanUtil.toBean(IterUtil.toMap(headerList, rowList), clazz);
 	}
 
 	@Override

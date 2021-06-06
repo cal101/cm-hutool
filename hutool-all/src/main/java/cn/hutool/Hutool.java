@@ -50,7 +50,7 @@ public class Hutool {
 	 */
 	public static Set<Class<?>> getAllUtils() {
 		return ClassUtil.scanPackage("cn.hutool",
-				(clazz) -> (false == clazz.isInterface()) && StrUtil.endWith(clazz.getSimpleName(), "Util"));
+				clazz -> (false == clazz.isInterface()) && StrUtil.endWith(clazz.getSimpleName(), "Util"));
 	}
 
 	/**

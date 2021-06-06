@@ -14,7 +14,7 @@ public class NioServerTest {
 
 	public static void main(String[] args) {
 		NioServer server = new NioServer(8080);
-		server.setChannelHandler((sc)->{
+		server.setChannelHandler(sc -> {
 			ByteBuffer readBuffer = ByteBuffer.allocate(1024);
 			try{
 				//从channel读数据到缓冲区
